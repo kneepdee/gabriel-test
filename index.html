@@ -20,6 +20,11 @@
   </head>
   <body>
     <img src="img/david.gif" />
+    <script>
+      window.getGliaContext = () => {
+        return {sessionId: 'some-token-sync'}
+      }
+    </script>
     <script
       async
       src="//api.beta.salemove.com/salemove_integration.js"
