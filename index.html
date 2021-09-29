@@ -21,8 +21,15 @@
   <body>
     <img src="img/david.gif" />
     <script>
+      // window.getGliaContext = () => {
+      //   return {sessionId: 'some-token-sync'}
+      // }
       window.getGliaContext = () => {
-        return {sessionId: 'some-token-sync'}
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve({sessionId: 'some-token-async'})
+          }, 3000);
+        })
       }
     </script>
     <script
