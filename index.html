@@ -22,7 +22,10 @@
     <img src="img/david.gif" />
     <script>
       window.getGliaContext = function() {
-        return {sessionId: 'some-token-sync'}
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const externalSessionId = urlParams.get('external_session_id')
+        return {sessionId: externalSessionId}
       }
       
       // Promise (yaku) polyfill
