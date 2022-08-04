@@ -1,12 +1,12 @@
-window.getGliaContext = function() {
-  // const queryString = window.location.search;
-  // const urlParams = new URLSearchParams(queryString);
-  // const externalSessionId = urlParams.get('external_session_id');
-  const externalSessionId = 'my-unique-token-123'
-  return {
-    sessionId: externalSessionId
-  };
-};
+// window.getGliaContext = function() {
+//   // const queryString = window.location.search;
+//   // const urlParams = new URLSearchParams(queryString);
+//   // const externalSessionId = urlParams.get('external_session_id');
+//   const externalSessionId = 'my-unique-token-123'
+//   return {
+//     sessionId: externalSessionId
+//   };
+// };
 
 // Promise (yaku) polyfill
 // Needs to be loaded immediately to support promise based API
